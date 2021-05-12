@@ -1,0 +1,14 @@
+{
+  "name": "zeshop",
+  "version": "1.0.0",
+  "description": "academic project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gedonix",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
