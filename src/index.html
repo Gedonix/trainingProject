@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Utility</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Набор утилит</h2>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class='normalBtn' id="timerShow"> Таймер </button>
+            <button class='normalBtn' id="calcShow"> Калькулятор дат </button>
+        </div>
+        <div class="content">
+            <div id="timerDiv" class="nonedisplay">
+                <form id="timer">
+                    <label><span class="pSet">Установите таймер</span></label>
+                    <br> <br>
+                    <span>Часы:</span><input type="number" name="hr" min="0" max="24" value=0>
+                    <span>Минуты:</span><input type="number" name="mnt" min="0" max="60" value=0>
+                    <span>Секунды:</span><input type="number" name="scn" min="0" max="60" value=0>
+                    <br>
+                    <button type="submit" class='timerBtn' id='startT'> СТАРТ </button>
+                    <button class='timerBtn' id='stoptT'> СТОП </button>
+                    <br>
+                    <label><span class="pSet">Осталось</span><span id="process">0</span>сек.</label>
+                </form>
+            </div>
+            <div id="calcDiv" class="nonedisplay">
+                <form id="datecalc">
+                    <h3>Калькулятор дат</h3>
+                    <label>
+                        <strong>Первая дата:</strong>
+                        <input type="date" name="firstDate" />
+                    </label>
+                    <label>
+                        <strong>Вторая дата:</strong>
+                        <input type="date" name="secondDate" />
+                    </label>
+                    <button type="submit">Расчитать промежуток</button>
+                    <p id="datecalc__result"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
